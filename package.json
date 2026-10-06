@@ -1,0 +1,18 @@
+{
+  "name": "kis-social",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A members-only photo feed for the KIS community.",
+  "type": "module",
+  "engines": { "node": "22.x" },
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env server/index.js",
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.58.0",
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
+  }
+}
